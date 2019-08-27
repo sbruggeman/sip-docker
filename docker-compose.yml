@@ -10,3 +10,4 @@ services:
     volumes:
       - /Users/steveb/sip-docker/data:/home/pi/SIP/data
       - /Users/steveb/sip-docker/plugins/manifests:/home/pi/SIP/plugins/manifests
+      - /sys:/sys
