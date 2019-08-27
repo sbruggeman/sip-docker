@@ -1,0 +1,12 @@
+version: '2'
+services:
+  sip:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - /Users/steveb/sip-docker/data:/home/pi/SIP/data
+      - /Users/steveb/sip-docker/plugins/manifests:/home/pi/SIP/plugins/manifests
